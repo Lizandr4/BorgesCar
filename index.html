@@ -1,119 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BorgesCar</title>
+    <link rel="stylesheet" href="style.css">
+
+
 </head>
+
 <body>
-    <div class="background">
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgba(179, 0, 0, 1);"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
-            </label>
-            <label class="logo"></label>
-            <ul>
-                <li>
-                    <a href="#">Veículos</a>
-                </li>
-                <li>
-                    <a href="#">Serviços</a>
-                </li>
-                <li>
-                    <a href="#">Contato</a>
-                </li>
-                <li>
-                    <a href="#">Sobre</a>
-                </li>
-            </ul>
+
+    <!-- header section starts -->
+    <header class="header">
+
+        <div id="menu-btn" class="fa-solid fa-bars"></div>
+
+        <a href="#" class="logo"><img src="content/logo.png" alt="" width="200px" height="60px"></a>
+
+        <!-- navbar section -->
+        <nav class="navbar">
+            <a href="#home">Início</a>
+            <a href="#featured">Veículos</a>
+            <a href="#services">Serviços</a>
+            <a href="#contact">Contato</a>
         </nav>
-        <div class="meio">
-            <h1>PROMOÇÃO EM CARROS USADOS</h1>
-            <button>Conferir</button>
+
+        <!-- login button -->
+        <div id="login-btn">
+            <button type="button" class="btn">login</button>
+            <i class="fa-regular fa-user"></i>
         </div>
+
+
+    </header>
+    <!-- header section ends -->
+
+    <!-- login form -->
+    <div class="login-form-container">
+
+        <span class="fa-solid fa-xmark" id="close-login-btn"></span>
+
+        <form action="">
+            <h3>login</h3>
+            <input type="email" placeholder="email" class="box">
+            <input type="senha" placeholder="senha" class="box">
+            <p>Esqueceu sua senha? <a href="#">Clique aqui</a></p>
+            <input type="submit" value="Entrar" class="btn">
+            <p>ou entre com</p>
+            <div class="buttons">
+                <a href="#" class="btn">google</a>
+                <a href="#" class="btn">facebook</a>
+            </div>
+            <p>não tem uma conta? <a href="#">crie</a></p>
+        </form>
+
     </div>
-    <section>
-        <h1>CARROS NOVOS</h1>
-        <div class="container1">
-            <div class="novos">
-                <img src="content/jeep/img1.jpg" alt="">
-                <p>Jeep Renegade 1.8 Flex</p>
-                <h5>R$ 69.990,00</h5>
-                <button>Estou interessado</button>
+
+    <!-- home section starts -->
+    <!-- home section starts -->
+    <section class="home" id="home">
+
+        <h1 class="home-parallax">Encontre seu
+        <br>
+        Carro ideal  <br><a href="#featured" class="btn home-parallax" >explore cars</a></h1>
+       
+        <img class="home-parallax" src="https://secure-developments.com/commonwealth/brasil/colorizer_onix/images/colorizer/onix-3-4-frente-vermelho-carmim.png" alt="">
+        
+
+    </section>
+    <!-- home section end -->
+
+    <!-- vehical section starts-->
+    <section class="vehical" id="vehicles">
+
+        <h1 class="heading">Carros <span>populares</span></h1>
+
+        <div class="slider">
+
+            <div class="wrapper">
+                <div class="fa-solid fa-angle-left preNext" id="preBtn"></div>
+
+                <div class="wraper-box">
+                    <div class="box active" id="car-img1">
+                        <img src="https://secure-developments.com/commonwealth/brasil/Colorizer_Equinox/images/colorizer/equinox-branco-summit-3-4-frente.png" alt="">
+                        <div class="content">
+                            <h3>Equinox</h3>
+                            <div class="price"><span>R$ 200.990,00</span></div>
+                            <p>1.5 2023</p>
+                            <a href="#contact" class="btn">tenho interesse</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img2">
+                        <img src="https://media.toyota.com.ar/6f63054e-6600-41dd-aa77-b85199661ca4.png" alt="">
+                        <div class="content">
+                            <h3>Corolla</h3>
+                            <div class="price"><span>R$ 148.290,00</span></div>
+                            <p>2.0 GLi CVT 2023</p>
+                            <a href="#contact" class="btn">tenho interesse</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img3">
+                        <img src="https://secure-developments.com/commonwealth/brasil/colorizer_cruze/images/colorizer/frente-preto-ouro-negro.png" alt="">
+                        <div class="content">
+                            <h3>Cruze</h3>
+                            <div class="price"><span>R$ 164.690,00</span></div>
+                            <p>1.4 2023</p>
+                            <a href="#contact" class="btn">tenho interesse</a>
+                        </div>
+                    </div>
+
+                    <div class="box" id="car-img4">
+                        <img src="https://media.toyota.com.ar/fb119cb4-f6e5-4dae-aa1b-9c2d70044f24.png" alt="">
+                        <div class="content">
+                            <h3>Yaris Sedan XL</h3>
+                            <div class="price"><span>R$ 148.290,00</span></div>
+                            <p>1.5 Automático 2023</p>
+                            <a href="#contact" class="btn">tenho interesse</a>
+                        </div>
+                    </div>
+                    </div>
+
+                <div class="fa-solid fa-angle-right preNext " id="nextBtn"></div>
             </div>
-            <div class="novos">
-                <img src="content/equinox/img1.jpg" alt="">
-                <p>Chevrolet Equinox 1.5 Turbo</p>
-                <h5>R$ 216.890,00</h5>
-                <button>Estou interessado</button>
+
+
+            <div class="activeCircle">
+                <div class="fa-regular fa-solid fa-circle" id="forCar-img1"></div>
+                <div class="fa-regular fa-circle" id="forCar-img2"></div>
+                <div class="fa-regular fa-circle" id="forCar-img3"></div>
+                <div class="fa-regular fa-circle" id="forCar-img4"></div>
             </div>
-            <div class="novos">
-                <img src="content/polotrack/img1.jpg" alt="">
-                <p>Volkswagen Polo Track 1.0 2023</p>
-                <h5>R$ 79.990,00</h5>
-                <button>Estou interessado</button>
+        </div>
+
+    </section>
+    <!-- vehical section end-->
+
+    <!-- services section starts -->
+    <section class="services" id="services">
+
+        <h1 class="heading">nossos <span>serviços</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fa-solid fa-car"></i>
+                <h3>Venda</h3>
+                <p>A BorgesCar trabalha com venda e atendimento seguro e de qualidade</p>
             </div>
-            <div class="novos">
-                <img src="content/fiattoro/img1.jpg" alt="">
-                <p>Fiat Toro Ultra 1.2 Turbo</p>
-                <h5>R$ 118.690,00</h5>
-                <button>Estou interessado</button>
+
+            <div class="box">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Peças e reparos</h3>
+                <p>Vendemos peças e fazemos a manutenção que você precisa no seu carro.</p>
+            
             </div>
-            <div class="novos">
-                <img src="content/frontier/img1.jpg" alt="">
-                <p>Nissan Frontier 2.3 Turbo</p>
-                <h5>R$ 118.690,00</h5>
-                <button>Estou interessado</button>
+
+            <div class="box">
+                <i class="fa-solid fa-car-burst"></i>
+                <h3>Seguro</h3>
+                <p>Um seguro completo que cabe no seu bolso.</p>
+            
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Suporte</h3>
+                <p>Tem algum feedback ou reclamação? Nossa equipe está pronta para te atender.</p>
+            
+            </div>
+        </div>
+
+    </section>
+    <!-- services section end -->
+
+    <!-- featured section starts -->
+    <section class="featured" id="featured">
+
+        <h1 class="heading"><span>Adquira</span> Já</h1>
+
+        <div class="featured-slider">
+
+            <div class="featured-wrapper">
+                <div class="fa-solid fa-angle-left preNext" id="fPreBtn"></div>
+
+                <div class="featured-wrapper2">
+                    <div class="featured-wrapper-box">
+
+                        <div class="box active">
+                            <img src="https://secure-developments.com/commonwealth/brasil/colorizer_onix/images/colorizer/onix-3-4-frente-vermelho-carmim.png" alt="">
+                            <h3>Onix</h3>
+                            <div class="price">R$ 84.390,00</div>
+                            <p>1.0 2024 Semi Novo</p>
+                            <a href="#contact" class="btn">Estou interessado</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="https://secure-developments.com/commonwealth/brasil/gm_forms/assets/front/images/jellys/612556045dcb6.png" alt="">
+                            <h3>S10</h3>
+                            <div class="price">R$ 224.420,00</div>
+                            <p>2.8 2023 Novo</p>
+                            <a href="#contact" class="btn">Estou interessado</a>
+                        </div>
+                        
+                        <div class="box">
+                            <img src="https://media.toyota.com.ar/b11eb215-22f9-4e64-a374-3860fa16e1bd.png" alt="">
+                            <h3>Corolla Cross</h3>
+                            <div class="price">R$ 161.910,00</div>
+                            <p>2.0 2024 Novo</p>
+                            <a href="#contact" class="btn">Estou interessado</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="https://media.toyota.com.ar/778b59c8-8b86-405c-8057-4be9bd454f7c.png" alt="">
+                            <h3>SW4</h3>
+                            <div class="price">R$ 374.690,00</div>
+                            <p>2.8 2023 Novo</p>
+                            <a href="#contact" class="btn">Estou interessado</a>
+                        </div>
+                        <div class="box">
+                            <img src="https://media.toyota.com.ar/778b59c8-8b86-405c-8057-4be9bd454f7c.png" alt="">
+                            <h3>Tracker</h3>
+                            <div class="price">R$ 125.690,00</div>
+                            <p>2.8 2023 Semi Novo</p>
+                            <a href="#contact" class="btn">Estou interessado</a>
+                        </div>
+                        <div class="box active">
+                            <img src="https://secure-developments.com/commonwealth/brasil/colorizer_spin/images/colorizer/azul-eclipse-3-4-frente.png" alt="">
+                            <h3>Spin</h3>
+                            <div class="price">R$ 100.990,00</div>
+                            <p>1.8 2024 Novo</p>
+                            <a href="#contact" class="btn">Estou interessado</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="https://secure-developments.com/commonwealth/brasil/gm_forms/assets/front/images/jellys/612556045dcb6.png" alt="">
+                            <h3>Yaris Hatch</h3>
+                            <div class="price">R$ 97.990,00</div>
+                            <p>1.5 2024 Novo</p>
+                            <a href="#contact" class="btn">Estou interessado</a>
+                        </div>
+
+                        <div class="box">
+                            <img src="https://media.toyota.com.ar/6f63054e-6600-41dd-aa77-b85199661ca4.png" alt="">
+                            <div class="content">
+                                <h3>Corolla</h3>
+                                <div class="price"><span>R$ 148.290,00</span></div>
+                                <p>2.0 GLi CVT 2023 Semi Novo</p>
+                                <a href="#contact" class="btn">Estou interessado</a>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <img src="https://media.toyota.com.ar/778b59c8-8b86-405c-8057-4be9bd454f7c.png" alt="">
+                            <h3>Hilux</h3>
+                            <div class="price">R$ 240.590,00</div>
+                            <p>2.8 Cabine Dupla 2023 Semi Novo</p>
+                            <a href="#contact" class="btn">Estou interessado</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="fa-solid fa-angle-right preNext" id="fNextBtn"></div>
+            </div>
+
+            <div class="fActCircle">
+                <div class="fa-regular fa-solid fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
+                <div class="fa-regular fa-circle"></div>
             </div>
 
         </div>
+
+
     </section>
-    <section>
-        <h1>CARROS USADOS</h1>
-        <div class="container2">
-            <div class="usados">
-                <img src="content/corolla/img1.jpg" alt="">
-                <p>Toyota Corolla 2.0 Flex</p>
-                <h5>R$ 98.900,00</h5>
-                <button>Estou interessado</button>
-            </div>
-            <div class="usados">
-                <img src="content/golfgti/img1.jpg" alt="">
-                <p>Volkswagen Golf Gti 2.0 Turbo</p>
-                <h5>R$ 120.800,00</h5>
-                <button>Estou interessado</button>
-            </div>
-            <div class="usados">
-                <img src="content/cronos/img1.jpg" alt="">
-                <p>Fiat Cronos 1.3 Flex</p>
-                <h5>R$ 75.990,00</h5>
-                <button>Estou interessado</button>
-            </div>
+    <!-- featured section end -->
+
+   
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>Contate</span>-nos</h1>
+
+        <div class="row">
+
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15905.45700420259!2d-40.572913663976884!3d-4.706629538809541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x795cc2ff5ae9709%3A0x42e8c7f821e38644!2sNova%20Russas%2C%20CE%2C%2062200-000!5e0!3m2!1spt-BR!2sbr!4v1684970382168!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form action="">
+                <h3>fale conosco</h3>
+                <input type="text" placeholder="nome" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="número" class="box">
+                <textarea class="box" cols="30" rows="10" placeholder="messagem"></textarea>
+                <input type="submit" value="enviar" class="btn">
+            </form>
+
         </div>
     </section>
-    <footer>
+    <!-- contact section end -->
+
+    <!-- footer section starts -->
     <section class="footer">
-        <div class="meiofooter">
-            <h3>Redes Sociais</h3>
-            <a href="#"><h5><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(251, 249, 249, 1);"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"></path></svg>E-mail</h5></a>
-            <a href="#"><h5><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(251, 249, 249, 1);"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263"></path></svg>Whatsapp</h5></a>
-            <a href="#"><h5><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(251, 249, 249, 1);"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg>Instagram</h5></a>
-            <h3>Nossos serviços</h3>
-            <a href="#">Financiamento</a>
-            <a href="#">Seguro</a>
-            <a href="#">Troca</a>
-            <a href="#">Venda</a>
-            <a href="#">Test-drive</a>
-            <h3>Sobre nós</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <p>Iste vitae dolorem inventore pariatur.</p>
+
+        <div class="footer-box-container">
+             <div class="box">
+                <h3>Formas de contato</h3>
+                <a href="#"><i class="fa-solid fa-phone"></i>+55 88 8175-3012</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i> borgescar@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>social media</h3>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i> whatsapp</a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i> facebook</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> instagram</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> twitter</a>
+            </div>
 
         </div>
+        
+        <div class="copyright">copyright &copy; | Equipe Concessionária - Trabalho de Lab. Web</div>
     </section>
-</footer>
+    <!-- footer section end -->
 
+
+    <!-- font awsome link -->
+    <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
+
+    <!-- import javascript custome file -->
+    <script src="script.js"></script>
 </body>
+
 </html>
