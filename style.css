@@ -182,9 +182,6 @@ html {
 }
 
 
-
-
-    /*main*/
     .home {
         padding-top: 10rem;
         text-align: center;
@@ -503,9 +500,6 @@ html {
 
 
 
-
-
-
 .contact .row{
     display: flex;
     flex-wrap: wrap;
@@ -597,14 +591,6 @@ html {
 
 
 
-
-
-
-
-
-
-
-/* media queries */
 @media(max-width:991px) {
     html {
         font-size: 55%;
@@ -695,8 +681,6 @@ html {
     .featured-slider .featured-wrapper .featured-wrapper-box .box.active img{
         width: 65vw;     
     }
-
-
 
 
 }
