@@ -239,7 +239,7 @@
                 <input type="text" placeholder="nome" class="box">
                 <input type="email" placeholder="email" class="box">
                 <input type="number" placeholder="número" class="box">
-                <textarea class="box" cols="30" rows="10" placeholder="messagem"></textarea>
+                <textarea class="box" cols="30" rows="10" placeholder="mensagem"></textarea>
                 <input type="submit" value="enviar" class="btn">
             </form>
         </div>
