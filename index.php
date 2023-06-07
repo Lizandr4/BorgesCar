@@ -141,11 +141,6 @@
                 <p>Vendemos peças e fazemos a manutenção que você precisa no seu carro.</p>
             </div>
             <div class="box">
-                <i class="fa-solid fa-car-burst"></i>
-                <h3>Seguro</h3>
-                <p>Um seguro completo que cabe no seu bolso.</p>
-            </div>
-            <div class="box">
                 <i class="fa-solid fa-headset"></i>
                 <h3>Suporte</h3>
                 <p>Tem algum feedback ou reclamação? Nossa equipe está pronta para te atender.</p>
